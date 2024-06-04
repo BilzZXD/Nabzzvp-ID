@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="pripayer.css">
+    <title>Free Fire</title>
+</head>
+<body>
+    <div class="container">
+        <div class="product-info">
+            <img src="assest/epepmini.jpg" alt="Game logo" class="logo">
+            <div class="product-description">
+                <h2 class="product-title">Free Fire</h2>
+                <p class="product-category">Games</p>
+            </div>
+            <div class="product-description">
+                <p class="product-info">
+                    <p>🚀 Process Instant ⏰ Transaksi 24Jam</p>
+                    <p>✅ Jaminan Layanan 🔒 Pembayaran Aman</p>
+                </p>
+                <h3 class="product-subtitle">Top Up Free Fire Hanya Dalam Hitungan Detik!</h3>
+                <p class="product-details">Cara Top Up Game Free Fire:</p>
+                <ol class="product-steps">
+                    <li>Cukup Masukan Data Free Fire Anda.</li>
+                    <li>Pilih Jumlah Item Yang Anda inginkan.</li>
+                    <li>Pilih Pembayaran Yang Anda Gunakan Dan Selesaikan Pembayaran.</li>
+                    <li>Item Akan Secara Langsung Ditambahkan Ke Free Fire Anda.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="product-purchase">
+            <h2>Beli Sekarang</h2>
+            <div class="buttons">
+                <button class="product-button" onclick="showProduct()">Produk</button>
+            </div>
+            <label for="user-data">Masukkan ID Game</label>
+            <input type="text" id="user-data" name="user-data" placeholder="Masukkan Data anda disini">
+            <div class="pricing">
+                <h1>Pilih Nominal</h1>
+                <div class="options">
+                    <div class="option" onclick="selectOption(this, 899)">
+                        <h4>Free Fire 5 Diamond</h4>
+                        <p>Rp. 899 - 5%</p>
+                        <p class="discounted">Rp. 944</p>
+                    </div>
+                    <div class="option" onclick="selectOption(this, 1.713)">
+                        <h4>Free Fire 10 Diamond</h4>
+                        <p>Rp. 1,713 - 5%</p>
+                        <p class="discounted">Rp. 1,799</p>
+                    </div>
+                    <div class="option" onclick="selectOption(this, 1.899)">
+                        <h4>Free Fire 12 Diamond</h4>
+                        <p>Rp. 1,899 - 5%</p>
+                        <p class="discounted">Rp. 1,994</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="membership-container">
+        <h2 class="membership-title">Membership Free Fire</h2>
+        <p class="membership-description">Nikmati berbagai keuntungan dengan menjadi anggota membership Free Fire. Pilih paket yang sesuai dengan kebutuhan Anda dan rasakan manfaat eksklusif yang ditawarkan!</p>
+        <div class="membership-options">
+            <div class="membership-option" onclick="selectMembershipOption(this, 28.499)">
+                <h3 style="margin-bottom: 10px; display: inline-block;">Membership Mingguan <img src="assest/membershipm.png" alt="Membership Icon" style="width: 50px; height: 50px; display: inline-block; vertical-align: middle;"></h3>
+                <p class="membership-price">Rp. 28,499</p>
+                <ul class="membership-benefits">
+                    <li>50 Diamonds per hari</li>
+                    <li>Total Diamond 450</li>
+                    <li>Aktif Selama 7 Day</li>
+                    <li>100 Diamond Pertama</li>
+                </ul>
+                <button class="buy-button">Beli Sekarang</button>
+            </div>
+            <div class="membership-option" onclick="selectMembershipOption(this, 85.111)">
+                <h3 style="margin-bottom: 10px; display: inline-block;">Membership Bulanan <img src="assest/ffb.png" alt="Membership Icon" style="width: 50px; height: 50px; display: inline-block; vertical-align: middle;"></h3>
+                <p class="membership-price">Rp. 85,000</p>
+                <ul class="membership-benefits">
+                    <li>50 Diamonds per hari</li>
+                    <li>Aktif Selama 30 Day</li>
+                    <li>Total 2000 Diamond</li>
+                    <li>Dapatkan 500 Diamonds Pertama</li>
+                    <li>Harga Lebih Murah</li>
+                </ul>
+                <button class="buy-button">Beli Sekarang</button>
+            </div>
+        </div>
+    </div>
+    <!-- Pembayaran -->
+    <div class="payment-container" id="payment-section">
+        <h2>Pembayaran</h2>
+        <p>Silakan pilih metode pembayaran Anda:</p>
+        <ul class="payment-methods">
+            <li onclick="selectPaymentMethod(this, 'QRIS')">
+                <img src="assest/qris.png" alt="QRIS AllPayment" style="width: 181px; height: 62px;">
+                <span>QRIS</span>
+                <p class="total-price" id="price-QRIS">Total Harga: Rp. 0</p>
+            </li>
+            <li onclick="selectPaymentMethod(this, 'Dana')">
+                <img src="assest/dana.png" alt="Dana" style="width: 181px; height: 52px;">
+                <span>Dana</span>
+                <p class="total-price" id="price-Dana">Total Harga: Rp. 0</p>
+            </li>
+            <li onclick="selectPaymentMethod(this, 'OVO')">
+                <img src="assest/ovo.svg" alt="OVO">
+                <span>OVO</span>
+                <p class="total-price" id="price-OVO">Total Harga: Rp. 0</p>
+            </li>
+            <li onclick="selectPaymentMethod(this, 'Gopay')">
+                <img src="assest/gopay.png" alt="Gopay" style="width: 181px; height: 62px;">
+                <span>Gopay</span>
+                <p class="total-price" id="price-Gopay">Total Harga: Rp. 0</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Ulasan -->
+    <div class="reviews-container" id="reviews">
+        <h2 class="reviews-title">Ulasan Pengguna</h2>
+        <div class="review">
+            <div class="review-header">
+                <img src="assest/user1.jpg" alt="User 1" class="review-avatar">
+                <div class="review-info">
+                    <h3 class="review-username">0857******07- 50 Diamond</h3>
+                    <p class="review-date">19 Mei 2024</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="review-text">Proses top up sangat cepat dan aman. Pelayanannya juga sangat memuaskan. Saya pasti akan kembali lagi untuk top up berikutnya!</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="assest/user2.jpg" alt="User 2" class="review-avatar">
+                <div class="review-info">
+                    <h3 class="review-username">0812******07- 200 Diamond</h3>
+                    <p class="review-date">19 Mei 2024</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="review-text">Sangat puas dengan layanan ini. Harga bersaing dan prosesnya instan. Terima kasih!</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <img src="assest/user3.jpg" alt="User 3" class="review-avatar">
+                <div class="review-info">
+                    <h3 class="review-username">0813******97- Membership Bulanan</h3>
+                    <p class="review-date">19 Mei 2024</p>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <p class="review-text">Layanan top up terbaik yang pernah saya gunakan. Proses cepat dan sangat aman. Sangat direkomendasikan!</p>
+        </div>
+    </div>
+
+    <!-- Tombol Read More -->
+<button id="read-more-button">Read More</button>
+    
+    <script src="ff.js"></script>
+</body>
+</html>

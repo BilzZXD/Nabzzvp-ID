@@ -1,0 +1,511 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left,  #bc2020, #b42d2d);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    width: calc(50% - 10px); /* Mengatur lebar anak kolom, dikurangi dengan margin antara kedua kolom */
+    margin-right: 10px; /* Memberikan margin antara kedua kolom */
+    margin-bottom: 20px; /* Menambahkan spasi di bagian bawah deskripsi produk */
+    border-top: 2px solid #ae0909; /* Menambahkan garis batas di bagian atas */
+    padding-top: 20px; /* Memberikan jarak dari batas atas */
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    border: 4px solid #b80000; /* Warna dan ketebalan border */
+    border-radius: 10px; /* Membuat sudut border menjadi melengkung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+}
+
+.product-description {
+    margin-bottom: 20px;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Warna teks judul */
+    margin-bottom: 10px;
+}
+
+.product-category {
+    color: #666; /* Warna teks kategori */
+    margin-bottom: 10px;
+}
+
+.product-info {
+    color: #888; /* Warna teks informasi */
+    margin-bottom: 10px;
+}
+
+.product-subtitle {
+    font-size: 20px;
+    color: #555; /* Warna teks subjudul */
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.product-details {
+    font-weight: bold;
+    color: #444; /* Warna teks detail */
+    margin-bottom: 5px;
+}
+
+.product-steps {
+    margin-left: 20px;
+    color: #666; /* Warna teks langkah-langkah */
+}
+
+
+.product-purchase {
+    margin-left: 10px; /* Memberikan margin antara kedua kolom */
+    margin-bottom: 20px; /* Menambahkan spasi di bagian bawah bagian pembelian */
+    border-top: 10px solid #d20f3f; /* Garis di bagian atas */
+    padding-top: 20px; /* Jarak antara garis dan konten di dalam .product-purchase */
+    
+}
+
+.product-description ol {
+    padding-left: 20px;
+}
+
+.product-purchase h2 {
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif; /* Menggunakan font Lato */
+    color: #000000;
+}
+
+.buttons {
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-button {
+    background-color: #b82828;
+    color: #fff;
+    margin-bottom: 20px; /* Tambahkan margin-bottom di sini */
+}
+
+.review-button {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+#user-data {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+}
+
+.pricing {
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: #b33737;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+   width: calc(33.33% - 10px); /* Setiap option mengambil 33.33% lebar container, dikurangi dengan margin */
+}
+
+.discounted {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+.option h4 {
+    font-size: 15px; /* Ukuran font judul */
+    font-weight: bold; /* Ketebalan font judul */
+    margin-bottom: 5px; /* Jarak antara judul dengan paragraf */
+    color: #ffffff; /* Warna teks judul */
+}
+
+.option p {
+    font-size: 14px; /* Ukuran font paragraf */
+    margin-bottom: 3px; /* Jarak antara paragraf */
+    color: #ffffff; /* Warna teks paragraf */
+}
+
+.product-info h3 {
+    margin-bottom: 20px; /* Menambahkan jarak dari bagian atas */
+}
+
+label[for="user-data"] {
+    display: block;
+    background-color: #b80000;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+    font-size: 20px;
+    font-family: 'Lato', sans-serif; /* Menggunakan font Lato */
+}
+h1 {
+    display: block; /* Menjadikan elemen h3 sebagai blok */
+    background-color: #b80000; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    padding: 10px 20px; /* Padding untuk memberikan ruang di sekitar teks */
+    border-radius: 5px; /* Membuat sudut-sudut menjadi melengkung */
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif; /* Menggunakan font Lato */
+    font-size: 20px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to left, #bc2020, #b42d2d);
+    padding: 20px;
+}
+
+.membership-container {
+    max-width: 800px;
+     margin: 50px auto 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.membership-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8d1b1b; /* Warna balok */
+    z-index: -1;
+    padding: 10px 20px; /* Spasi di sekitar teks */
+    border-radius: 5px; /* Sudut balok melengkung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.membership-description {
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.membership-options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.membership-option {
+    background-color: #b33737;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+    text-align: center;
+}
+
+.membership-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.membership-option h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership-price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership-benefits {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.membership-benefits li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.membership-benefits li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #ffd700; /* Warna ikon ceklist */
+}
+
+.buy-button {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #e6b800;
+}
+
+/* CSS untuk pembayaran */
+.payment-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8d1b1b; /* Warna balok */
+    z-index: -1;
+    padding: 10px 20px; /* Spasi di sekitar teks */
+    border-radius: 5px; /* Sudut balok melengkung */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.payment-container p {
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.payment-methods li {
+    width: 48%; /* Atur lebar untuk dua kolom */
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.payment-methods li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.payment-methods li img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.payment-methods li span {
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to left, #3f366d, #654e97);
+    color: #333;
+    padding: 20px;
+}
+
+/* Review Container */
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-title {
+    font-size: 24px;
+    color: #5D478B;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Review */
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+    transition: background 0.3s ease;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review:hover {
+    background: #f9f9f9;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review-info {
+    flex: 1;
+}
+
+.review-username {
+    font-size: 18px;
+    color: #5D478B;
+}
+
+.review-date {
+    font-size: 14px;
+    color: #999;
+}
+
+.review-rating i {
+    color: #FFD700;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Read More Button */
+#read-more-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #5D478B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#read-more-button:hover {
+    background: #7851A9;
+    transform: translateY(-3px);
+}
+
+#read-more-button:active {
+    background: #4B0082;
+    transform: translateY(1px);
+}
+
+
+/* CSS untuk elemen opsi */
+.option {
+    background-color: #b33737;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: calc(33.33% - 10px);
+    transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi */
+}
+
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+.option.selected {
+    background-color: #721717; /* Warna latar belakang yang diinginkan */
+    color: #fff; /* Warna teks yang sesuai */
+}
+
+/* CSS untuk metode pembayaran yang dipilih */
+.payment-methods li.selected {
+    background-color: #f0f0f0; /* Warna latar belakang */
+    border: 2px solid #fff70a; /* Warna border */
+    box-shadow: 0 0 10px rgb(255, 0, 0, 0.5); /* Efek bayangan */
+}
+
+/* Efek hover untuk metode pembayaran */
+.payment-methods li:hover {
+    background-color: #ffffff; /* Warna latar belakang saat hover */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+}
+

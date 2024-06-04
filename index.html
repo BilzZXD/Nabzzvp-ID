@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Produk</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="tailwind-prefixed.css">
+</head>
+<body>
+    <div class="header-bar"></div>
+    <div class="container">
+        <h2>INFORMATION💡</h2>
+        <div class="slider-container">
+            <div class="slide">
+                <img src="/Informasi/slide1.webp" alt="Gambar 1">
+            </div>
+            <div class="slide">
+                <img src="/Informasi/slide2.webp" alt="Gambar 2">
+            </div>
+            <div class="slide">
+                <img src="/Informasi/slide3.webp" alt="Gambar 3">
+            </div>
+            <button class="prev">&lt;</button>
+            <button class="next">&gt;</button>
+        </div>
+        <div class="slide-indicators"></div>
+    </div>
+
+    <div class="container">
+        <h2>🔥TRENDING</h2>
+        <div class="products-container">
+            <div class="product" onclick="window.location.href='halaman_produk.html'">
+                <img src="assest/produk1.jpg" alt="Produk 1">
+                <div class="product-details">
+                    <h3 class="product-name">Free Fire</h3>
+                    <p>Males pengen beli truk</p>
+                    <div class="pesan-error" style="display: none;">Kuantitas tidak valid</div>
+                </div>
+            </div>
+            <div class="product" onclick="window.location.href='ff.html'">
+                <img src="assest/produk2.jpg" alt="Produk 1">
+                <div class="product-details">
+                    <h3 class="product-name">Free Fire</h3>
+                    <p>Garena</p>
+                    <div class="pesan-error" style="display: none;">Kuantitas tidak valid</div>
+                </div>
+            </div>
+            <!-- Tambahkan produk lainnya di sini -->
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="games">Games</button>
+            <button class="filter-btn" data-filter="puls">Pulsa📱</button>
+            <!-- Tambahkan kategori lainnya sesuai kebutuhan -->
+        </div>
+
+        <div class="products-container" onclick="window.location.href='halaman_produk.html'">
+            <div class="product-filter" data-category="games">
+                <div class="product-thumbnail">
+                    <img src="assest/pubg.jpg" alt="Produk Games">
+                </div>
+                <div class="product-description">
+                    <h1>Pubg Mobile</h1>
+                    <p>Tencent Games</p>
+                </div>
+            </div>
+            <div class="product-filter" data-category="games">
+                <div class="product-thumbnail">
+                    <img src="assest/epep.jpg" alt="Produk Games">
+                </div>
+                <div class="product-description">
+                    <h1>Free Fire Max</h1>
+                    <p>Garena</p>
+                </div>
+            </div>
+            <div class="product-filter" data-category="games">
+            <div class="product-thumbnail">
+                <img src="assest/Mobilegends.jpg" alt="Produk Games">
+            </div>
+            <div class="product-description">
+                <h1>Mobile Legends</h1>
+                <p>Moonton</p>
+            </div>
+         </div>
+         <div class="product-filter" data-category="games">
+                <div class="product-thumbnail">
+                    <img src="assest/coc.jpg" alt="Produk Games">
+                </div>
+                <div class="product-description">
+                    <h1>Clash Of Clans</h1>
+                    <p>Supercell</p>
+                </div>
+             </div>
+            <div class="product-filter" data-category="games">
+                <div class="product-thumbnail">
+                    <img src="assest/fcmobile.jpg" alt="Produk Games">
+                </div>
+                <div class="product-description">
+                    <h1>FC Mobile</h1>
+                    <p>ELECTRONIC ARTS</p>
+                </div>
+             </div>
+              <div class="product-filter" data-category="games">
+                  <div class="product-thumbnail">
+                      <img src="assest/supersus.jpg" alt="Produk Games">
+                  </div>
+                  <div class="product-description">
+                      <h1>Super Sus</h1>
+                      <p>PIProductions</p>
+                  </div>
+               </div>
+               <div class="product-filter" data-category="games">
+                     <div class="product-thumbnail">
+                         <img src="assest/AOV.jpg" alt="Produk Games">
+                     </div>
+                     <div class="product-description">
+                         <h1>Arena Of Valor</h1>
+                         <p>Proxima Beta Pte. Limited</p>
+                     </div>
+                  </div>
+                 <div class="product-filter" data-category="games">
+                      <div class="product-thumbnail">
+                          <img src="assest/valo.jpg" alt="Produk Games">
+                      </div>
+                      <div class="product-description">
+                          <h1>Valorant</h1>
+                          <p>Riot Games</p>
+                      </div>
+                   </div>
+                  <div class="product-filter" data-category="games">
+                        <div class="product-thumbnail">
+                            <img src="assest/pb.jpg" alt="Produk Games">
+                        </div>
+                        <div class="product-description">
+                            <h1>Point Blank</h1>
+                            <p>Zeptto Co</p>
+                        </div>
+                     </div>
+                     <div class="product-filter" data-category="games">
+                         <div class="product-thumbnail">
+                             <img src="assest/cod.jpg" alt="Produk Games">
+                         </div>
+                         <div class="product-description">
+                             <h1>Call of Duty</h1>
+                             <p>Garena</p>
+                         </div>
+                      </div>
+                      <div class="product-filter" data-category="games">
+                           <div class="product-thumbnail">
+                               <img src="assest/cc.jpg" alt="Produk Games">
+                           </div>
+                           <div class="product-description">
+                               <h1>Clash Royale</h1>
+                               <p>Supercell</p>
+                           </div>
+                        </div>
+                        <div class="product-filter" data-category="games">
+                           <div class="product-thumbnail">
+                               <img src="assest/ghensin.jpg" alt="Produk Games">
+                           </div>
+                           <div class="product-description">
+                               <h1>Ghensin Impact</h1>
+                               <p>miHoYo</p>
+                           </div>
+                        </div>
+                        <div class="product-filter-sim" data-category="puls">
+                           <div class="product-thumbnail-sim">
+                               <img src="assest/telkom.jpg" alt="Produk Pulsa">
+                           </div>
+                           <div class="product-description-sim">
+                               <h1>Telkomsel</h1>
+                               <p>PT Telkom Indonesia (Persero) Tbk</p>
+                           </div>
+                        </div>
+                        <div class="product-filter-sim" data-category="puls">
+                           <div class="product-thumbnail-sim">
+                               <img src="assest/indosat.jpg" alt="Produk Pulsa">
+                           </div>
+                           <div class="product-description-sim">
+                               <h1>Indosat</h1>
+                               <p>PT Indosat Ooredoo Hutchison Tbk</p>
+                           </div>
+                        </div>
+                        <div class="product-filter-sim" data-category="puls">
+                           <div class="product-thumbnail-sim">
+                               <img src="assest/axis.jpg" alt="Produk Pulsa">
+                           </div>
+                           <div class="product-description-sim">
+                               <h1>Axis</h1>
+                               <p>PT XL Axiata Tbk</p>
+                           </div>
+                        </div>
+                        <div class="product-filter-sim" data-category="puls">
+                           <div class="product-thumbnail-sim">
+                               <img src="assest/Tri.jpg" alt="Produk Pulsa">
+                           </div>
+                           <div class="product-description-sim">
+                               <h1>Tri</h1>
+                               <p>PT Hutchison 3 Indonesia</p>
+                           </div>
+                        </div>
+                        <div class="product-filter-sim" data-category="puls">
+                           <div class="product-thumbnail-sim">
+                               <img src="assest/smart.jpg" alt="Produk Pulsa">
+                           </div>
+                           <div class="product-description-sim">
+                               <h1>Smartfren</h1>
+                               <p>PT Smartfren Telecom Tbk</p>
+                           </div>
+                        </div>
+            <!-- Tambahkan produk lainnya dengan gambar dan teks yang sesuai -->
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="header">
+            <h2>DIPERCAYA OLEH RIBUAN PENGGUNA</h2>
+            <h1>NABZZVP MARKET Distributor Topup Game,PPOB & SMM yang di percaya</h1>
+            <p>NABZZVP SHOP menyediakan layanan Top up game dan Reseller Voucher Game termurah dan terpercaya di Indonesia.</p>
+        </div>
+        <div class="stats">
+            <div class="stat">
+                <h3>4K+</h3>
+                <p>Pengguna</p>
+            </div>
+            <div class="stat">
+                <h3>25+</h3>
+                <p>Games</p>
+            </div>
+            <div class="stat">
+                <h3>1000+</h3>
+                <p>Item</p>
+            </div>
+            <div class="stat">
+                <h3>99+</h3>
+                <p>Transaksi</p>
+            </div>
+        </div>
+        <!-- Konten informasi di sini -->
+            <div class="reviews">
+                <div class="review-card">
+                    <h3>WhatsApp</h3>
+                </div>
+                <div class="review-card">
+                    <h3>Instagram</h3>
+                </div>
+                <div class="review-card">
+                    <h3>Telegram</h3>
+                </div>
+                <div class="review-card">
+                    <h3>Twitter</h3>
+                </div>
+                <div class="review-card">
+                    <h3>Tiktok</h3>
+                </div>
+                <div class="review-card">
+                    <h3>Website Admin</h3>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <img src="assest/logo.png" alt="MVSTORE.ID Logo">
+                <div class="logo-text">
+                    <p>MVSTORE.ID - Tempat Top up game Murah, Aman dan Terpercaya.</p>
+                    <p>Tempat Topup Game <strong>Free Fire, Mobile Legends, PUBG Mobile, Apex Legends</strong> murah cepat dan terpercaya.</p>
+                    <p><i class="fa fa-building"></i> Pontianak, Benua Melayu Darat, Pontianak Selatan</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Trend Games</h3>
+                <ul>
+                    <li><a href="#">Mobile Legends</a></li>
+                    <li><a href="#">PUBG Mobile</a></li>
+                    <li><a href="#">Free Fire</a></li>
+                    <li><a href="#">Metal Slug</a></li>
+                    <li><a href="#">Call of Duty Mobile</a></li>
+                    <li><a href="#">Valorant</a></li>
+                </ul>
+            </div>
+            <div class="footer-section sitemap">
+                <h3>Site Map</h3>
+                <ul>
+                    <li><a href="#">Daftar Harga</a></li>
+                    <li><a href="#">Kebijakan Privasi</a></li>
+                    <li><a href="#">Syarat Dan Ketentuan</a></li>
+                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Review</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="payments">
+                <h3>Mendukung Pembayaran</h3>
+                <div class="payment-logos">
+                    <img src="/assest/mtqr.png" alt="Payment Logos">
+                    <img src="assest/mtgpy.png" alt="Payment Logos">
+                    <img src="/assest/mtovo.svg" alt="Payment Logos">
+                    <img src="/assest/mtdsns.png" alt="Payment Logos">
+                    <img src="/assest/mtsp.png" alt="Payment Logos">
+                    <img src="/assest/mtastr.webp" alt="Payment Logos">
+                    <img src="/assest/linkmt.webp" alt="Payment Logos">
+                </div>
+            </div>
+            <p>&copy; 2024 All rights reserved. Made by MVTEAM</p>
+        </div>
+    </footer>
+
+    <script src="produk.js"></script>
+</body>
+</html>
